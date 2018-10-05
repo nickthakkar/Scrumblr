@@ -2,13 +2,13 @@ import {Component} from '@angular/core';
 import { NavController, NavParams} from 'ionic-angular';
 
 @Component({
-  selector: 'page-standard',
-  templateUrl: 'standard.html'
+  selector: 'page-card',
+  templateUrl: 'card.html'
 })
-export class StandardPage {
+export class CardPage {
   private currentCard: string = '';
 
   constructor(public navCtrl: NavController,  public navParams: NavParams) {
-    this.currentCard = navParams.get('item');
+    this.currentCard = navParams.get('card');
   }
 }
