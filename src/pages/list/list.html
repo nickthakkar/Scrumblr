@@ -9,12 +9,12 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
+    <button ion-item *ngFor="let item of ['1/2','1','2','3','5','8','13','21']" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item" item-start></ion-icon>
+      {{item}}
+      <!--<div class="item-note" item-end>-->
+        <!--{{item}}-->
+      <!--</div>-->
     </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>
