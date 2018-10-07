@@ -7,7 +7,7 @@ import {CardPage} from "../card/card";
   templateUrl: 'deckType.html'
 })
 export class DeckTypePage {
-  selectedType: any;
+  selectedType: any = 'Standard';
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
   cardList: string[];
