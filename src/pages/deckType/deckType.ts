@@ -8,8 +8,6 @@ import {CardPage} from "../card/card";
 })
 export class DeckTypePage {
   selectedType: any = 'Standard';
-  icons: string[];
-  items: Array<{title: string, note: string, icon: string}>;
   cardList: string[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
