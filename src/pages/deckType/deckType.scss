@@ -1,3 +1,12 @@
-page-list {
-
+.cards-container {
+  padding: 10px;
+  .mini-card {
+    width: 85px;
+    font-size: 25px;
+    border: 2px solid red;
+    border-radius: 5px;
+    display: inline;
+    margin: 5px;
+    padding: 20px 10px;
+  }
 }

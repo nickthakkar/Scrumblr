@@ -12,7 +12,7 @@ import { DeckTypePage } from '../pages/deckType/deckType';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = CardPage;
+  rootPage: any = DeckTypePage;
 
   pages: Array<{title: string, component: any}>;
 
