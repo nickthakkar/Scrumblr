@@ -13,12 +13,12 @@ export class DeckTypePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedType = navParams.get('title');
-    if(this.selectedType === 'Standard') {
-      this.cardList = ['0', '1/2','1','2','3','5','8','13','20','40','100','∞','?'];
-    } else if(this.selectedType ==='Fibonacci') {
+    if(this.selectedType ==='Fibonacci') {
       this.cardList = ['0','1','2','3','5','8','13','21','34','55','89','144','∞','?'];
     } else if(this.selectedType === 'T-Shirt') {
       this.cardList = ['XS','S','M','L','XL','XXL','∞','?'];
+    } else {
+      this.cardList = ['0', '1/2','1','2','3','5','8','13','20','40','100','∞','?'];
     }
   }
 

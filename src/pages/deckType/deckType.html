@@ -8,15 +8,9 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let card of cardList" (click)="itemTapped($event, card)">
+  <div class="cards-container">
+    <button class="mini-card" ion-item *ngFor="let card of cardList" (click)="itemTapped($event, card)">
       {{card}}
-      <!--<div class="item-note" item-end>-->
-        <!--{{item}}-->
-      <!--</div>-->
     </button>
-  </ion-list>
-  <!--<div *ngIf="selectedItem" padding>-->
-    <!--You navigated here from <b>{{selectedItem.title}}</b>-->
-  <!--</div>-->
+  </div>
 </ion-content>
