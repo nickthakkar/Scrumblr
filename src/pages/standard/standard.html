@@ -3,14 +3,12 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Standard</ion-title>
+    <ion-title>Card</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <div class="poker-card">
-  {{currentCard}}
-  </div>
+  <div class="poker-card" (click)="goBack()">{{currentCard}}</div>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <!--<button ion-button secondary menuToggle>Toggle Menu</button>-->
 </ion-content>
