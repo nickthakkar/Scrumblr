@@ -3,8 +3,8 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { StandardPage } from '../pages/standard/standard';
-import { ListPage } from '../pages/list/list';
+import { CardPage } from '../pages/card/card';
+import { DeckTypePage } from '../pages/deckType/deckType';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -12,8 +12,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    StandardPage,
-    ListPage
+    CardPage,
+    DeckTypePage
   ],
   imports: [
     BrowserModule,
@@ -22,8 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    StandardPage,
-    ListPage
+    CardPage,
+    DeckTypePage
   ],
   providers: [
     StatusBar,

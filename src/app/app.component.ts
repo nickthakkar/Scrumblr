@@ -3,8 +3,8 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import {StandardPage} from '../pages/standard/standard';
-import { ListPage } from '../pages/list/list';
+import {CardPage} from '../pages/card/card';
+import { DeckTypePage } from '../pages/deckType/deckType';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,7 +12,7 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = StandardPage;
+  rootPage: any = DeckTypePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -21,9 +21,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Standard', component: StandardPage },
-      { title: 'Fibonacci', component: ListPage },
-      { title: 'T-Shirt', component: ListPage }
+      { title: 'Standard', component: DeckTypePage },
+      { title: 'Fibonacci', component: DeckTypePage },
+      { title: 'T-Shirt', component: DeckTypePage }
     ];
 
   }
@@ -40,6 +40,6 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    this.nav.setRoot(page.component, {title: page.title});
   }
 }
