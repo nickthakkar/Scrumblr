@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Scrumbler</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="cards-container">
+    <span class="mini-card" ion-item *ngFor="let card of cardList" (click)="itemTapped($event, card)">
+      {{card}}
+    </span>
+  </div>
+</ion-content>

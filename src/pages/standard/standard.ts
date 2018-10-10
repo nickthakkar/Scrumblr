@@ -11,4 +11,8 @@ export class StandardPage {
   constructor(public navCtrl: NavController,  public navParams: NavParams) {
     this.currentCard = navParams.get('item');
   }
+
+  goBack(): void {
+    this.navCtrl.pop();
+  }
 }

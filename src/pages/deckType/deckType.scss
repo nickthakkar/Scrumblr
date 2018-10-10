@@ -1,0 +1,16 @@
+.cards-container {
+  padding: 10px;
+  .mini-card {
+    width: 80px;
+    font-size: 22px;
+    border-radius: 8px;
+    height: 90px;
+    line-height: 60px;
+    border: 3px double white;
+    text-align: center;
+    display: inline-block;
+    margin: 4px;
+    background: black;
+    color: gold
+  }
+}
