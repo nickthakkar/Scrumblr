@@ -8,12 +8,14 @@ import { DeckTypePage } from '../pages/deckType/deckType';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {AboutPage} from "../pages/about/about";
 
 @NgModule({
   declarations: [
     MyApp,
     CardPage,
-    DeckTypePage
+    DeckTypePage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     CardPage,
-    DeckTypePage
+    DeckTypePage,
+    AboutPage
   ],
   providers: [
     StatusBar,

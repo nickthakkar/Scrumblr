@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import {CardPage} from '../pages/card/card';
 import { DeckTypePage } from '../pages/deckType/deckType';
+import {AboutPage} from "../pages/about/about";
 
 @Component({
   templateUrl: 'app.html'
@@ -23,7 +24,8 @@ export class MyApp {
     this.pages = [
       { title: 'Standard', component: DeckTypePage },
       { title: 'Fibonacci', component: DeckTypePage },
-      { title: 'T-Shirt', component: DeckTypePage }
+      { title: 'T-Shirt', component: DeckTypePage },
+      { title: 'About', component: AboutPage },
     ];
 
   }
