@@ -6,7 +6,7 @@ import { NavController, NavParams} from 'ionic-angular';
   templateUrl: 'card.html'
 })
 export class CardPage {
-  private currentCard: string = '';
+  currentCard: string = '';
 
   constructor(public navCtrl: NavController,  public navParams: NavParams) {
     this.currentCard = navParams.get('card');
